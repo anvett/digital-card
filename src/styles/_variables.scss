@@ -1,0 +1,52 @@
+$primary-color: #371457;
+$secondary-color: #fece1c;
+$accent-color: #f28a2b;
+$dark-color: #333333;
+$light-color: #ffffff;
+
+// Fuentes personalizadas
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+// Espaciado personalizado
+$spacing-1: 0.25rem; // 4px
+$spacing-2: 0.5rem;  // 8px
+$spacing-3: 0.75rem; // 12px
+$spacing-4: 1rem;    // 16px
+$spacing-5: 1.5rem;  // 24px
+$spacing-6: 2rem;    // 32px
+$spacing-7: 2.5rem;  // 40px
+$spacing-8: 3rem;    // 48px
+
+// Tamaños de borde personalizados
+$border-radius-small: 0.2rem;
+$border-radius-medium: 0.4rem;
+$border-radius-large: 0.6rem;
+
+// Sombras personalizadas
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// Transiciones personalizadas
+$transition-fast: 0.2s;
+$transition-normal: 0.3s;
+$transition-slow: 0.5s;
+
+// Breakpoints para media queries
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Z-index personalizados
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;

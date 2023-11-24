@@ -1,0 +1,23 @@
+@import 'variables';
+
+// Sobrescrituras de las variables de Bootstrap
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $accent-color,
+  "info": darken($primary-color, 15%),
+  "warning": lighten($accent-color, 15%),
+  "danger": adjust-hue($accent-color, -20),
+  "light": $light-color,
+  "dark": $dark-color
+);
+
+$font-family-base: $font-primary;
+$headings-font-family: $font-secondary;
+$border-radius: $border-radius-medium;
+$box-shadow-sm: $shadow-sm;
+$box-shadow: $shadow;
+$box-shadow-md: $shadow-md;
+$box-shadow-lg: $shadow-lg;
+$box-shadow-xl: $shadow-xl;
+
