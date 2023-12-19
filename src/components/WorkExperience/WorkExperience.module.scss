@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 1.5rem; 
+      margin-bottom: 20px;
+      color: $primary-color;
+    }
+  
+    .experienceItem {
+      margin-bottom: 20px;
+      cursor: pointer;
+      color: $dark-color;
+    }
+  
+    .companyName {
+      font-weight: bold;
+    }
+  }
+  

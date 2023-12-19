@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-2;
+  }
+  
+  .item {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: $spacing-4;
+  }
+
+  .logoEducation {
+   
+    border-radius: 50%;
+    border: solid 3px $secondary-color;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+  
+  .title {
+    margin-left: 20px;
+    color: $secondary-color;
+  }
+  

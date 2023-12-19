@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.bankLogo{
+    border-radius: 50%;
+    border: solid 3px $primary-color;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

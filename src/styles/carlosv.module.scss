@@ -49,53 +49,12 @@
   
 }
 
-.educationSection{
+.personalInfo{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: $spacing-4;
-  width: 100%;
-  height: auto;
-  background-color: $primary-color;
-
-  .educationTitle {
-    font-family: $font-primary;
-    font-size: 0.8rem;
-    color: $secondary-color;
-    text-align: center;
-    margin-bottom: $spacing-4;
-  }
-}
-
-.paymentSection{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: $spacing-4;
-  width: 100%;
-  height: auto;
-  background-color: $light-color;
-
-}
-
-.workExperience{
-  background-color: $light-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: $spacing-4;
-  width: 100%;
-  height: auto;
-
-  
-}
-
-.imageGallery{
-  justify-content: center;
-  padding: $spacing-1;
   width: 100%;
   height: auto;
   background-color: $primary-color;
@@ -110,11 +69,12 @@
   padding: $spacing-4;
   width: 100%;
   height: auto;
+  
 
   .paymentTitle {
     font-family: $font-primary;
     font-size: 0.8rem;
-    color: $primary-color;
+    color: $secondary-color;
     text-align: center;
     margin-bottom: $spacing-4;
   }
@@ -129,15 +89,4 @@
     overflow: hidden;
     border-radius: 50%;
   }
-}
-
-.videoPlayer{
-  
-  background-color: $primary-color;
-  width: 100%;
-}
-
-.qrCode {
-  background-color: $light-color;
-  
 }

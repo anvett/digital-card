@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.profileImageContainer {
+  background-color: $secondary-color;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 25px 38px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+
+  
+}
