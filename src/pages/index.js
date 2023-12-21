@@ -162,31 +162,37 @@ export default function testpage() {
                   thumbnail: "/images/cybersecurity_1.jpg",
                   full: "/images/cybersecurity_1.jpg",
                   description: "Cybersecurity",
+                  alt: "Cybersecurity",
                 },
                 {
                   thumbnail: "/images/network_1.jpg",
                   full: "/images/network_1.jpg",
                   description: "Network",
+                  alt: "Network",
                 },
                 {
                   thumbnail: "/images/outsourcing_1.jpg",
                   full: "/images/outsourcing_1.jpg",
                   description: "Outsourcing",
+                  alt: "Outsourcing",
                 },
                 {
                   thumbnail: "/images/userSupport_1.jpg",
                   full: "/images/userSupport_1.jpg",
                   description: "Help Desk",
+                  alt: "Help Desk",
                 },
                 {
                   thumbnail: "/images/webDesign.jpg",
                   full: "/images/webDesign.jpg",
                   description: "Web Design",
+                  alt: "Web Design",
                 },
                 {
                   thumbnail: "/images/soporteTecnico_1.jpg",
                   full: "/images/soporteTecnico_1.jpg",
                   description: "Soporte Técnico",
+                  alt: "Soporte Técnico",
                 },
               ]}
 

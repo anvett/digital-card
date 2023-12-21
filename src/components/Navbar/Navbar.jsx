@@ -7,7 +7,7 @@ import styles from "./Navbar.module.scss";
 const CustomNavbar = () => {
   return (
     <Navbar bg="light"  className={styles.navbarContainer}>
-      <Container>
+      <Container className={styles.container}>
         <Navbar.Brand href="#home" className={styles.navbarBrand}>
           <Image
             src="/images/logo_navbar.jpg"
@@ -18,7 +18,7 @@ const CustomNavbar = () => {
           />
         </Navbar.Brand>
 
-        <Nav className={`me=auto ${styles.nav} `}>
+        <Nav className={styles.nav}>
           <Link to="profile" smooth={true} duration={500} className={styles.navLink}>
             Perfil
           </Link>

@@ -1,47 +1,36 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
-    
-   
-    .navbarBrand {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
 
-      .navbarLogo {
-        border-radius: 50%;
+  .navbarLogo {
+    border-radius: 50%;
+  }
 
-      }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-2;
+  }
 
-      
-    }
-  
-    .navbarCollapse {
-      display: flex;
-      justify-content: end;
-      gap: 2rem;
-      
-    }
+  .navLink {
+    color: $primary-color;
+    font-size: 0.8rem;
+    cursor: pointer;
 
-    .nav{
-      display: flex;
-      justify-content: center;
-      gap: $spacing-3;
-    }
-  
-    .navLink {
-      color: $primary-color;
-      font-size: 1rem;
-      cursor: pointer;
-
-      &:hover {
-        color: $accent-color;
-        opacity: 0.8;
-      }
-
+    &:hover {
+      color: $accent-color;
+      opacity: 0.8;
     }
   }
+}

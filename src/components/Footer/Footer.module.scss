@@ -14,10 +14,15 @@
     
 }
 
+.textFooter{
+    text-align: center;
+}
+
 .linkFooter {
     color: $light-color;
     text-decoration: none;
     transition: $transition-fast;
+    text-align: center;
     
     
 }
@@ -25,7 +30,7 @@
 .linkFooter:hover {
     text-decoration: underline;
     color: $accent-color;
-    // Add more styles here...
+    
 }
 
 
