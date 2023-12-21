@@ -5,9 +5,11 @@ import styles from './ImageGallery.module.scss';
 const ImageGallery = ({ images }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedDescription, setSelectedDescription] = useState("");
 
-  const openModal = (image) => {
+  const openModal = (image, description) => {
     setSelectedImage(image);
+    setSelectedDescription(description);
     setShowModal(true);
   };
 
@@ -17,6 +19,7 @@ const ImageGallery = ({ images }) => {
         {images.map((image, index) => (
           <Col xs={6} sm={4} md={3} key={index} className={styles.thumbnail}>
             <Image src={image.thumbnail} onClick={() => openModal(image.full)} thumbnail />
+            <span className={styles.imageDescription}>{image.description}</span>
           </Col>
         ))}
       </Row>
@@ -24,6 +27,7 @@ const ImageGallery = ({ images }) => {
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Body>
           <Image src={selectedImage} fluid />
+          <p className={styles.modalDescription}>{selectedDescription}</p>
         </Modal.Body>
       </Modal>
     </>

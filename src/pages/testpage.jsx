@@ -22,17 +22,13 @@ export default function testpage() {
         <Row className={styles.mainRow}>
           {/* Columna con imagen de perfil, informacón general, redes sociales e imagen informativa */}
           <Col xs={9} className={styles.infoCol}>
-            <section>
+            <section id="profile">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
               >
-                <ProfileImage
-                  src="/images/profileFoto.jpeg"
-                  alt="Andrés Veintimilla"
-                  size={150}
-                />
+                <ProfileImage src="/images/profileFoto.jpeg" alt="Andrés Veintimilla" size={150} />
               </motion.div>
             </section>
             <section>
@@ -95,35 +91,37 @@ export default function testpage() {
 
         <Row>
           <Col className={styles.educationSection}>
-            <div className={styles.educationTitle}>
-              <h2>Educación y Certificaciones</h2>
-            </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-            >
-              <div className={styles.educationInfo}>
-                <EducationAndCertifications
-                  items={[
-                    {
-                      title: "Informatic Engineer",
-                      institution: "UTPL",
-                      year: "2013",
-                      description: "Ingeniería en Informática",
-                      logo: "/images/utpl_logo.jpeg",
-                    },
-                    {
-                      title: "Master in TI",
-                      institution: "IexeTEC",
-                      year: "2022",
-                      description: "Maestría en Tecnologías de la Información",
-                      logo: "/images/iexe_logo.png",
-                    },
-                  ]}
-                />
+            <section id="education">
+              <div className={styles.educationTitle}>
+                <h2>Educación y Certificaciones</h2>
               </div>
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+              >
+                <div className={styles.educationInfo}>
+                  <EducationAndCertifications
+                    items={[
+                      {
+                        title: "Informatic Engineer",
+                        institution: "UTPL",
+                        year: "2013",
+                        description: "Ingeniería en Informática",
+                        logo: "/images/utpl_logo.jpeg",
+                      },
+                      {
+                        title: "Master in TI",
+                        institution: "IexeTEC",
+                        year: "2022",
+                        description: "Maestría en Tecnologías de la Información",
+                        logo: "/images/iexe_logo.png",
+                      },
+                    ]}
+                  />
+                </div>
+              </motion.div>
+            </section>
           </Col>
         </Row>
 
@@ -131,22 +129,22 @@ export default function testpage() {
 
         <Row>
           <Col className={styles.workExperience}>
-            <WorkExperience
-              experiences={[
-                {
-                  company: "Empresa XYZ",
-                  role: "Desarrollador Senior",
-                  description:
-                    "Descripción detallada del rol y responsabilidades.",
-                },
-                {
-                  company: "Empresa XYZ",
-                  role: "Desarrollador Senior",
-                  description:
-                    "Descripción detallada del rol y responsabilidades.",
-                },
-              ]}
-            />
+            <section id="experience">
+              <WorkExperience
+                experiences={[
+                  {
+                    company: "Empresa XYZ",
+                    role: "Desarrollador Senior",
+                    description: "Descripción detallada del rol y responsabilidades.",
+                  },
+                  {
+                    company: "Empresa XYZ",
+                    role: "Desarrollador Senior",
+                    description: "Descripción detallada del rol y responsabilidades.",
+                  },
+                ]}
+              />
+            </section>
           </Col>
         </Row>
 
@@ -178,12 +176,10 @@ export default function testpage() {
         {/* Componente de información de pago */}
         <Row>
           <Col className={styles.paymentSection}>
-            <section className={styles.paymentInfo}>
+            <section id="payment" className={styles.paymentInfo}>
               <div className={styles.paymentTitle}>
                 <h2>Información de Pago</h2>
-                <span>
-                  Haz clic en el logo para acceder a los datos de la cuenta
-                </span>
+                <span>Haz clic en el logo para acceder a los datos de la cuenta</span>
               </div>
               {/* <motion.div
                 initial={{ opacity: 0 }}
@@ -222,10 +218,9 @@ export default function testpage() {
         {/* Componente de QR Code */}
         <Row>
           <Col className={styles.qrCode}>
-            <QRCodeComponent
-              qrCodeImageUrl="/images/qr_code.png"
-              altText="QR Code"
-            />
+            <section id="qrCode">
+              <QRCodeComponent qrCodeImageUrl="/images/qr_code.png" altText="QR Code" />
+            </section>
           </Col>
         </Row>
       </Container>

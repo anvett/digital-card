@@ -4,18 +4,18 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: $spacing-2;
+    justify-content: space-around;
+    gap: $spacing-7;
   }
   
   .item {
     
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-    gap: $spacing-4;
+    gap: $spacing-3;
   }
 
   .logoEducation {
@@ -29,7 +29,9 @@
   }
   
   .title {
-    margin-left: 20px;
+    //margin-left: 20px;
     color: $secondary-color;
+    text-align: center;
+    font-size: 1rem;
   }
   

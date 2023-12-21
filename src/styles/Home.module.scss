@@ -2,8 +2,8 @@
 
 .mainContainer {
   background-color: $accent-color;
-  min-height: calc(100vh - 190px); // Ocupa todo el alto de la ventana
-  width: 100%; // Ocupa todo el ancho disponible
+  min-height: calc(100vh - 190px); 
+  width: 100%; 
 }
 
 .mainRow {
@@ -19,7 +19,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-top: solid 5px $primary-color;
+  border-left: solid 5px $primary-color;
+  
+  
+ 
 }
+
+
 
 .infoCol2 {
   background-color: $primary-color;
@@ -58,6 +65,8 @@
   width: 100%;
   height: auto;
   background-color: $primary-color;
+  
+  
 
   .educationTitle {
     font-family: $font-primary;
@@ -82,10 +91,6 @@
 
 .workExperience{
   background-color: $light-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: $spacing-4;
   width: 100%;
   height: auto;
@@ -94,7 +99,7 @@
 }
 
 .imageGallery{
-  justify-content: center;
+  
   padding: $spacing-1;
   width: 100%;
   height: auto;
@@ -126,7 +131,7 @@
     gap: $spacing-7;
     width: 100%;
     height: auto;
-    overflow: hidden;
+    
     border-radius: 50%;
   }
 }

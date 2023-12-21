@@ -5,8 +5,17 @@
     padding: 5px;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .imageDescription{
+      color: $secondary-color;
+    }
+
+    .modalDescription{
+      color: $secondary-color;
+    }
 
     img {
       width: 100px;

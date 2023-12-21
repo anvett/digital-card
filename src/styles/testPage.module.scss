@@ -1,25 +1,24 @@
 @import "../styles/variables.scss";
 
 .mainContainer {
-  background-color: $accent-color;
-  min-height: calc(100vh - 190px); // Ocupa todo el alto de la ventana
-  width: 100%; // Ocupa todo el ancho disponible
+ 
+  min-height: calc(100vh - 190px); 
+  width: 100%; 
 }
 
-.mainRow {
-  background-color: $primary-color;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .infoCol {
   overflow: scroll;
-  background: $light-color;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+  border: solid 5px $primary-color;
+  
+}  
+
+
 
 .infoCol2 {
   background-color: $primary-color;
@@ -123,10 +122,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: $spacing-7;
+    gap: $spacing-8;
     width: 100%;
     height: auto;
-    overflow: hidden;
+
     border-radius: 50%;
   }
 }
