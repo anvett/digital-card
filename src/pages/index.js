@@ -5,7 +5,6 @@ import ProfileImage from "@/components/ProfileImage/ProfileImage";
 import PersonalInfo from "@/components/PersonalInfo/PersonalInfo";
 import ContactIcons from "@/components/ContactIcons/ContactIcons";
 import SocialMediaIcons from "@/components/SocialMediaIcons/SocialMediaIcons";
-import styles from "../styles/Home.module.scss";
 import Layout from "@/components/Layout/Layout";
 import { motion } from "framer-motion";
 import PaymentInfo from "@/components/PaymentInfo/PaymentInfo";
@@ -14,6 +13,7 @@ import WorkExperience from "@/components/WorkExperience/WorkExperience";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
 import QRCodeComponent from "@/components/QrCodeComponent/QrCodeComponent";
+import styles from "../styles/Home.module.scss";
 
 export default function testpage() {
   return (
@@ -56,7 +56,7 @@ export default function testpage() {
             </section>
             <section className={styles.imageSection}>
               <Image
-                src="/images/technology_1.jpg"
+                src="/images/hero.jpg"
                 alt="Technology background"
                 width={500}
                 height={300}

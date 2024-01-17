@@ -14,14 +14,16 @@
 
 .infoCol {
   overflow: scroll;
-  background: $light-color;
+  //background: $light-color;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-top: solid 5px $primary-color;
   border-left: solid 5px $primary-color;
-  
+  background-image: url("/images/background_4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   
  
 }
@@ -86,14 +88,20 @@
   width: 100%;
   height: auto;
   background-color: $light-color;
+  // background-image: url("/images/background_4.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
 
 }
 
 .workExperience{
-  background-color: $light-color;
+  //background-color: $light-color;
   padding: $spacing-4;
   width: 100%;
   height: auto;
+  background-image: url("/images/background_4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   
 }
@@ -144,5 +152,8 @@
 
 .qrCode {
   background-color: $light-color;
+  // background-image: url("/images/background_4.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
   
 }

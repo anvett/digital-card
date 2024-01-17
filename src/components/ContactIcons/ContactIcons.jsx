@@ -35,6 +35,13 @@ const ContactIcons = ({ title, phone, email, whatsapp, telegram, location }) => 
               alt="Phone"
             />
           )}
+           {location && (
+            <ContactIcon
+              href={`https://maps.google.com/?q=${location}`}
+              src="/icons/location_y.png"
+              alt="Location"
+            />
+          )}
           {email && (
             <ContactIcon
               href={`mailto:${email}`}
@@ -56,13 +63,7 @@ const ContactIcons = ({ title, phone, email, whatsapp, telegram, location }) => 
               alt="Telegram"
             />
           )}
-          {location && (
-            <ContactIcon
-              href={`https://maps.google.com/?q=${location}`}
-              src="/icons/location_y.png"
-              alt="Location"
-            />
-          )}
+         
           
         </Col>
       </Row>
