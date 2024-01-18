@@ -29,9 +29,7 @@ export default function testpage() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Business digital card Andrés Veintimilla" />
         <meta property="og:description" content="Tarjeta de negocios digital" />
-        <meta property="og:image" content="https://aveintimillacard.anvetcorp.com/images/sharedimage.jpg" />
-
-        
+        <meta property="og:image" content="https://aveintimillacard.anvetcorp.com/images/sharedimage.jpeg" />
 
       </Head>
       <Layout>
