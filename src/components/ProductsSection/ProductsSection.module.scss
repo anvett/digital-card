@@ -1,0 +1,137 @@
+@import "../../styles/variables.scss";
+
+.productCol {
+  padding: 1rem; // Espacio alrededor de cada tarjeta de producto
+}
+
+.productCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: $spacing-8;
+  cursor: pointer;
+  border: 1px solid $primary-color; //Borde sutil para las tarjetas
+  border-radius: 0.5rem; // Bordes redondeados
+  overflow: hidden; // Asegura que todo dentro de la tarjeta se contenga correctamente
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra sutil para dar profundidad
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  padding-top: $spacing-3; // Espacio arriba de la tarjeta
+  padding-bottom: $spacing-3; // Espacio debajo de la tarjeta
+  min-height: 280px;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); // Sombra más pronunciada al pasar el mouse
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    text-align: center; // Centra el título del producto
+    padding: 0.5rem; // Espacio alrededor del título
+    margin: 0; // Remueve el margen por defecto del h3
+    background-color: $primary-color; // Color de fondo para el título (usa tu variable)
+    color: $light-color;
+    width: 100%;
+    font-family: $font-primary;
+  }
+
+  .whatsappButton {
+    background-color: $primary-color;
+    color: $light-color;
+  }
+
+  // Ajustes específicos para la imagen
+  .productImage {
+    width: 100%; // Asegura que la imagen cubra el ancho de la tarjeta
+    height: auto; // Mantiene la proporción de la imagen
+    border-radius: 5px;
+  }
+}
+
+.captionHeader {
+  text-align: center; // Centra el texto
+  margin: 0; // Remueve el margen por defecto
+  padding-top: $spacing-3; // Espacio arriba del texto
+  padding-bottom: $spacing-3;
+  background-color: $primary-color;
+}
+
+.captionBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem; // Espacio alrededor del contenido del modal
+  background-color: $primary-color; // Fondo del contenedor de texto del modal
+  color: $secondary-color; // Color del texto
+
+  .captionTitle {
+    padding: $spacing-3; // Espacio alrededor del título
+    margin: 0; // Remueve el margen por defecto
+    color: $primary-color; // Color del texto
+    font-weight: bolder;
+    background-color: $light-color;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: $font-primary;
+  }
+
+  p {
+    // Estilos para descripciones que son texto plano
+
+    text-align: center; // Centra el texto
+    margin: 0; // Remueve el margen por defecto
+    padding-bottom: $spacing-7; // Espacio debajo del texto
+    padding-top: $spacing-3;
+    color: $light-color;
+    font-family: $font-secondary;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    // Estilos para descripciones que son listas
+    padding-bottom: $spacing-7;
+    padding-top: $spacing-4;
+    padding-left: 20px;
+    list-style-type: disc; // O cualquier otro estilo de lista que prefieras
+
+    li {
+      // Estilos para cada ítem de la lista
+      color: $light-color;
+      font-family: $font-secondary;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+.whatsappButtonContact {
+  background-color: $light-color !important;
+  color: $primary-color !important;
+  font-size: 1.1rem !important;
+  padding: 0.65rem 2rem;
+
+  &:hover {
+    background-color: darken($secondary-color, 15%) !important;
+  }
+}
+
+.closeButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 2rem;
+
+  .closeButton {
+    background-color: $secondary-color !important;
+    color: $primary-color !important;
+    font-size: 0.8rem !important;
+    padding: 0.25rem 1rem;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: darken($secondary-color, 15%) !important;
+    }
+  }
+}

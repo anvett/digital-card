@@ -6,22 +6,32 @@
   }
   
   .name {
-    font-size: 2rem;
+    font-family: $font-primary;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
     color: $primary-color;
     
   }
   
   .title {
-    font-size: 1.5rem;
+    font-family: $font-secondary;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: $primary-color;
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: 1.5rem;
+    }
     
   }
   
   .description {
-    font-size: 1rem;
-    color: $dark-color;
+    font-size: 1.5rem;
+    color: $primary-color;
+    font-family: $font-secondary;
     
+    @media (max-width: $breakpoint-sm) {
+      font-size: 1.2rem;
+    }
   }
   

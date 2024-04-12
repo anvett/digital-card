@@ -2,8 +2,9 @@
 
 .footer {
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $light-color;
     padding: $spacing-4;
+    font-family: $font-primary;
 
     .containerFooter{
         display: flex;
@@ -23,14 +24,14 @@
     text-decoration: none;
     transition: $transition-fast;
     text-align: center;
+    font-family: $font-primary;
     
     
 }
 
 .linkFooter:hover {
     text-decoration: underline;
-    color: $accent-color;
-    
+    color: $secondary-color
 }
 
 

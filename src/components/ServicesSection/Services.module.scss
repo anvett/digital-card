@@ -1,0 +1,156 @@
+@import "../../styles/variables.scss";
+
+.container {
+  padding: 40px;
+}
+
+.serviceItem {
+  cursor: pointer;
+  margin-bottom: 15px; // Espacio entre ítems de servicio
+  padding: 10px; // Espaciado interno para cada ítem de servicio
+  background-color: $light-color; // Un ligero fondo para cada ítem de servicio
+  border-radius: 20px; // Bordes redondeados para suavizar la apariencia
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $accent-color; // Cambio de color al pasar el mouse
+    transform: translateY(-2px); // Efecto de elevación al pasar el mouse
+  }
+}
+
+.serviceName {
+  font-size: 1.25rem; // Tamaño de fuente para el nombre del servicio
+  color: $primary-color; // Color de texto
+  text-align: center; // Centrar el título del servicio
+  font-family: $font-secondary; // Fuente del título del servicio
+}
+
+// .modalHeader{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.serviceImageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px; // Altura fija para la imagen del servicio en el modal
+  margin-bottom: 30px; // Espacio entre la imagen y el título del modal
+
+  // Ajustes para asegurar que la imagen se muestre correctamente
+  img {
+    border-radius: 5px; // Bordes redondeados para la imagen
+  }
+}
+
+// Estilos adicionales para el modal
+// .modal-title {
+//   font-weight: bold; // Título del modal más destacado
+//   margin-left: 20px; // Espacio entre la imagen y el título del modal
+// }
+
+// .whatsappModalBody {
+//   a {
+//     max-width: 250px;
+//     margin: 20px auto;
+//     display: block;
+//     text-align: center;
+//   }
+// }
+
+// .modal-body {
+//   font-size: 1rem; // Tamaño de fuente para el cuerpo del modal
+//   color: #6c757d; // Color de texto para el cuerpo del modal
+//   a.whatsappButton {
+//     max-width: 250px; // Limita el ancho del botón
+//     margin: 20px auto; // Centra el botón horizontalmente y añade margen vertical
+//     display: block; // Hace que el enlace se comporte como un bloque
+//     text-align: center; // Asegura que el texto dentro del botón esté centrado
+//   }
+// }
+
+.captionHeader {
+  text-align: center; // Centra el texto
+  margin: 0; // Remueve el margen por defecto
+  padding-bottom: $spacing-3;
+  background-color: $primary-color;
+}
+
+.captionBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem; // Espacio alrededor del contenido del modal
+  background-color: $primary-color; // Fondo del contenedor de texto del modal
+  color: $secondary-color; // Color del texto
+
+  .captionTitle {
+    padding: $spacing-3; // Espacio alrededor del título
+    margin: 0; // Remueve el margen por defecto
+    color: $primary-color; // Color del texto
+    font-weight: bolder;
+    background-color: $light-color;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: $font-primary;
+  }
+
+  p {
+    // Estilos para descripciones que son texto plano
+
+    text-align: center; // Centra el texto
+    margin: 0; // Remueve el margen por defecto
+    padding-bottom: $spacing-7; // Espacio debajo del texto
+    padding-top: $spacing-3;
+    color: $light-color;
+    font-family: $font-secondary;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    // Estilos para descripciones que son listas
+    padding-left: 20px;
+    list-style-type: disc;
+    padding-bottom: $spacing-7; // Espacio debajo del texto
+    padding-top: $spacing-3; // O cualquier otro estilo de lista que prefieras
+
+    li {
+      // Estilos para cada ítem de la lista
+      color: $secondary-color;
+      font-size: 1.2rem;
+      font-family: $font-secondary;
+    }
+  }
+}
+
+.whatsappButtonContact {
+  background-color: $light-color !important;
+  color: $primary-color !important;
+  font-size: 1.1rem !important;
+  padding: 0.65rem 2rem;
+
+  &:hover {
+    background-color: darken($secondary-color, 15%) !important;
+  }
+}
+
+.closeButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 2rem;
+
+  .closeButton {
+    background-color: $secondary-color !important;
+    color: $primary-color !important;
+    font-size: 0.8rem !important;
+    padding: 0.25rem 1rem;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: darken($secondary-color, 15%) !important;
+    }
+  }
+}

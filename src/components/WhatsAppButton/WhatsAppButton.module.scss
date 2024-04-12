@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+//Variables
+//-------------------------------------------
+
+
+
+.whatsappButton {
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 0.75rem 3rem;
+  border-radius: 15px;
+  font-family: $font-secondary;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0.5rem 2.5rem;
+    font-size: 1.2rem;
+  }
+  
+  //border: none;
+  cursor: pointer;
+  display: inline-block; // Cambiado de inline-flex a inline-block
+  text-align: center; // Asegura que el texto esté centrado
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+    color: $primary-color;
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

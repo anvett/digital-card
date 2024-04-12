@@ -1,16 +1,17 @@
 @import "../../styles/variables.scss";
 
 .qrCodeContainer {
-    padding-top: $spacing-4;
-    padding-bottom: $spacing-4;
+   
 
   .image{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
   }
   .scanText {
     margin-top: 10px;
-    font-size: 0.9rem;
-    color: $dark-color;
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $font-secondary;
   }
 }

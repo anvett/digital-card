@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import styles from './QrCodeComponent.module.scss'; 
+import styles from './QRCodeComponent.module.scss'; 
 
 const QRCodeComponent = ({ qrCodeImageUrl, altText }) => {
   return (

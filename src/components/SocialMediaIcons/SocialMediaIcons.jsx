@@ -5,7 +5,7 @@ import styles from "./SocialMediaIcons.module.scss";
 const SocialMediaIcon = ({ href, src, alt }) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-      <Image src={src} alt={alt} width={40} height={40} />
+      <Image src={src} alt={alt} width={50} height={50} className={styles.socialIconImage} />
     </a>
   );
 };

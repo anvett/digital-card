@@ -1,36 +1,143 @@
 @import "../../styles/variables.scss";
 
 .gallery {
-  .thumbnail {
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .imageDescription{
-      color: $secondary-color;
-      text-align: center;
-    }
+.thumbnail {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .modalDescription{
-      color: $secondary-color;
-      text-align: center;
-    }
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
 
-    img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 5%;
-      border: 3px solid $secondary-color;
+.thumbnail img {
+  width: 200px; // Ancho fijo para las imágenes
+  height: 150px; // Alto fijo para las imágenes
+  object-fit: cover; // Asegura que la imagen cubra el espacio sin distorsionarse
+}
 
-      &:hover {
-        transform: scale(1.1);
-        transition: transform 0.5s;
-        opacity: 0.8;
-      }
+.imageInfo {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.imageTitle {
+  display: block;
+  font-size: 1.25rem; // Tamaño de fuente para el nombre del servicio
+  color: $light-color; // Color de texto
+  text-align: center; // Centrar el título del servicio
+  font-family: $font-secondary;
+}
+
+.imageDescription {
+  font-size: 1rem; // Tamaño de fuente para el nombre del servicio
+  color: $light-color; // Color de texto
+  text-align: center; // Centrar el título del servicio
+  font-family: $font-secondary;
+}
+
+.modalDescription,
+.highlightedText {
+  margin-top: 15px;
+}
+
+// Estilos para el contenido del modal
+.captionHeader {
+  text-align: center; // Centra el texto
+  margin: 0; // Remueve el margen por defecto
+  padding-bottom: $spacing-3;
+  background-color: $primary-color;
+}
+.modal-header {
+  img {
+    border-radius: 5px;
+    max-height: 200px;
+  }
+}
+
+.captionBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem; // Espacio alrededor del contenido del modal
+  background-color: $primary-color; // Fondo del contenedor de texto del modal
+  color: $light-color; // Color del texto
+  gap: 20px;
+}
+
+.captionTitle {
+  padding: $spacing-3; // Espacio alrededor del título
+  margin: 0; // Remueve el margen por defecto
+  color: $primary-color; // Color del texto
+  font-weight: bolder;
+  background-color: $light-color;
+  width: 100%;
+  border-radius: 25px;
+  text-align: center;
+  font-family: $font-primary;
+}
+
+.modal-body ul {
+  
+  list-style-type: circle;
+  padding-bottom: $spacing-3; // Espacio debajo del texto
+  padding-top: $spacing-3;
+
+  li {
+    color: $light-color;
+    font-size: 1.2rem;
+    font-family: $font-secondary;
+  }
+}
+
+.highlightedText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $secondary-color;
+  
+}
+
+
+.whatsappButtonContact {
+  background-color: $light-color !important;
+  color: $primary-color !important;
+  font-size: 1.1rem !important;
+  padding: 0.65rem 2rem;
+
+  &:hover {
+    background-color: darken($secondary-color, 15%) !important;
+  }
+}
+
+.closeButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 2rem;
+
+  .closeButton {
+    background-color: $secondary-color !important;
+    color: $primary-color !important;
+    font-size: 0.8rem !important;
+    padding: 0.25rem 1rem;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: darken($secondary-color, 15%) !important;
     }
   }
 }
+
