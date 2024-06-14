@@ -1,0 +1,103 @@
+@import '../../styles/variables.scss'; // Importa variables globales si las tienes
+
+.contactIconsContainer {
+  padding: 20px 0; // Añade padding vertical para separación
+}
+
+.contactIconsRow {
+  justify-content: center; // Centra los elementos horizontalmente en la fila
+}
+
+.contactIconsCol {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; // Centra los botones en la columna
+  flex-direction: column;
+  gap: $spacing-8; // Espacio entre botones
+}
+
+
+
+.icon {
+  margin-right: 10px; // Espacio entre el ícono y el título
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer; // Cambia el cursor al pasar el mouse
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  &:hover {
+    background-color: $accent-color; // Cambio de color al pasar el mouse
+    transform: translateY(-2px); // Efecto de elevación al pasar el mouse
+  }
+}
+
+
+
+.modalHeader{
+  background-color: $primary-color;
+  color: $light-color;
+  margin: 0;
+  text-align: center;
+  .modalTitle{
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    text-align: center;
+  }
+}
+
+.modalBody{
+ display: flex;
+ justify-content: space-around;
+  align-items: center;
+  
+  Button{
+    color: $light-color;
+    font-family: $font-secondary;
+    background-color: $primary-color;
+    font-size: 1rem;
+    @media (max-width: 420px) {
+      font-size: 0.7rem;
+    }
+    @media (max-width: 330px) {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+.modalLocation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  text-align: start;
+  margin: 0;
+  padding: 10px;
+  color: $dark-color;
+  Button{
+    margin-bottom: $spacing-4;
+    background-color: $primary-color;
+    color: $light-color;
+  }
+}
+
+.contactFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  text-align: start;
+  margin: 0;
+  padding: 10px;
+  color: $dark-color;
+  Button{
+    margin-bottom: $spacing-4;
+    background-color: $primary-color;
+    color: $light-color;
+  }
+
+}

@@ -18,42 +18,93 @@ import styles from "../styles/Home.module.scss";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
 import Services from "@/components/ServicesSection/Services";
 import ProductsSection from "@/components/ProductsSection/ProductsSection";
+import ContactIconsOnly from "@/components/ContactIconsOnly/ContactIconsOnly";
 
 export default function testpage() {
+  //-----------------------------------------------
+  // Contact Data Array
+  //-----------------------------------------------
+
+  const contactData = [
+    {
+      href: "tel:+593992543979",
+      icon: "/icons/call_y.png",
+      alt: "Phone",
+      title: "Contáctame",
+      name: "Andrés Veintimilla",
+    },
+    {
+      href: "mailto:aveintimilla@anvetcorp.com",
+      icon: "/icons/email_y.png",
+      alt: "Email",
+      title: "Email",
+    },
+    {
+      href: "https://wa.me/+593992543979",
+      icon: "/icons/whatsapp_y.png",
+      alt: "WhatsApp",
+      title: "WhatsApp",
+    },
+    {
+      href: "https://t.me/+593992543979",
+      icon: "/icons/telegram_y.png",
+      alt: "Telegram",
+      title: "Telegram",
+    },
+    {
+      href: "https://www.google.com/maps/search/?api=1&query=ANVETCORP",
+      icon: "/icons/location_y.png",
+      alt: "Location",
+      title: "Ubicación",
+      address: "Av. Principal 123, Ciudad, País",
+      hours: {
+        mondayToFriday: "09:00 - 18:00",
+        saturday: "10:00 - 14:00",
+        sunday: "Cerrado",
+        holidays: "10:00 - 14:00",
+      },
+    },
+  ];
+
   const productsData = [
     {
       id: 1,
       name: "Repotenciación de Computadores",
       image: "/images/soporteTecnico_1.jpg",
-      description:"Transforma tu experiencia informática con nuestra repotenciación de computadores. Mejoramos significativamente el rendimiento de tus equipos actualizando componentes críticos y optimizando el software. Ideal para quienes buscan extender la vida útil de sus dispositivos sin comprometer velocidad o eficiencia. Desde actualizaciones de memoria RAM y almacenamiento SSD hasta la mejora de sistemas de enfriamiento, nuestro servicio asegura que tu PC o laptop se mantenga al día con las demandas tecnológicas actuales.",
+      description:
+        "Transforma tu experiencia informática con nuestra repotenciación de computadores. Mejoramos significativamente el rendimiento de tus equipos actualizando componentes críticos y optimizando el software. Ideal para quienes buscan extender la vida útil de sus dispositivos sin comprometer velocidad o eficiencia. Desde actualizaciones de memoria RAM y almacenamiento SSD hasta la mejora de sistemas de enfriamiento, nuestro servicio asegura que tu PC o laptop se mantenga al día con las demandas tecnológicas actuales.",
       phone: "+593992542248",
     },
     {
       id: 2,
       name: "Venta de Computadoras",
       image: "/images/computers.jpeg",
-      description: "Ofrecemos una selección de computadoras de alta calidad, perfectas para profesionales y empresas que buscan rendimiento y fiabilidad.",
+      description:
+        "Ofrecemos una selección de computadoras de alta calidad, perfectas para profesionales y empresas que buscan rendimiento y fiabilidad.",
       phone: "+593992542248",
     },
     {
       id: 3,
       name: "Impresoras y Accesorios",
       image: "/images/impresoras.jpeg",
-      description: "Desde impresoras multifuncionales hasta accesorios esenciales, tenemos todo lo que tu negocio necesita para operar de manera eficiente.",
+      description:
+        "Desde impresoras multifuncionales hasta accesorios esenciales, tenemos todo lo que tu negocio necesita para operar de manera eficiente.",
       phone: "+593992542248",
     },
     {
       id: 4,
       name: "Repuestos y Partes",
       image: "/images/partes.jpg",
-      description: "Mantén tu tecnología funcionando en su máximo potencial con nuestra amplia selección de repuestos y partes de alta calidad. Desde memorias RAM, discos duros (HDDs y SSDs), hasta tarjetas gráficas y placas base, cada pieza ha sido seleccionada para ofrecer compatibilidad universal y rendimiento excepcional. Ya sea que estés buscando mejorar tu equipo actual o necesites reemplazar un componente defectuoso, tenemos todo lo necesario para ayudarte.",
+      description:
+        "Mantén tu tecnología funcionando en su máximo potencial con nuestra amplia selección de repuestos y partes de alta calidad. Desde memorias RAM, discos duros (HDDs y SSDs), hasta tarjetas gráficas y placas base, cada pieza ha sido seleccionada para ofrecer compatibilidad universal y rendimiento excepcional. Ya sea que estés buscando mejorar tu equipo actual o necesites reemplazar un componente defectuoso, tenemos todo lo necesario para ayudarte.",
       phone: "+593992542248",
     },
     {
       id: 5,
       name: "Tarjetas de Presentación Digitales",
       image: "/images/anvetcard.png",
-      description: "Diferénciate en el mundo digital con nuestras tarjetas de presentación digitales personalizables. Desarrolladas con tecnología de punta, estas tarjetas no solo capturan la esencia de tu marca personal o empresarial, sino que también facilitan la interacción directa con tus contactos a través de enlaces integrados a redes sociales, portafolios en línea, y mucho más. Ecológicas y siempre accesibles, nuestras tarjetas digitales son la herramienta perfecta para hacer una impresión duradera en la era digital.",
+      description:
+        "Diferénciate en el mundo digital con nuestras tarjetas de presentación digitales personalizables. Desarrolladas con tecnología de punta, estas tarjetas no solo capturan la esencia de tu marca personal o empresarial, sino que también facilitan la interacción directa con tus contactos a través de enlaces integrados a redes sociales, portafolios en línea, y mucho más. Ecológicas y siempre accesibles, nuestras tarjetas digitales son la herramienta perfecta para hacer una impresión duradera en la era digital.",
       phone: "+593992542248",
     },
   ];
@@ -95,13 +146,21 @@ export default function testpage() {
   ];
 
   const images = [
-    
     {
       thumbnail: "/images/Ofertas/MSI_Katana.jpeg",
       full: "/images/Ofertas/MSI_Katana.jpeg",
       title: "Laptop MSI Katana 15 B13VFK",
-      description: "Laptop MSI Katana 15 B13VFK, 15.6 pulgadas, Intel Core i7, 16GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060",
-      descriptionItems: ["Intel Core i7 13620H", "16 GB Ram expandible a 64 GB", "1 TB SSD", "15.6 pulgadas FHD 144 Hz", "NVIDIA GeForce RTX 4060 8GB GDDR6", "Teclado retroiluminado RGB","Windows 11 Home","Un año de garantía"],
+      //description: "Laptop MSI Katana 15 B13VFK, 15.6 pulgadas, Intel Core i7, 16GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060",
+      descriptionItems: [
+        "Intel Core i7 13620H",
+        "16 GB Ram expandible a 64 GB",
+        "1 TB SSD",
+        "15.6 pulgadas FHD 144 Hz",
+        "NVIDIA GeForce RTX 4060 8GB GDDR6",
+        "Teclado retroiluminado RGB",
+        "Windows 11 Home",
+        "Un año de garantía",
+      ],
       highlightedText: "1629,00 USD",
       alt: "Oferta 1",
     },
@@ -109,7 +168,7 @@ export default function testpage() {
       thumbnail: "/images/webDesign.jpg",
       full: "/images/webDesign.jpg",
       title: "Macbook Pro 2012",
-      description: "Seminueva, 8GB RAM, 128GB SSD, 13 pulgadas, Core i5",
+      //description: "Seminueva, 8GB RAM, 128GB SSD, 13 pulgadas, Core i5",
       descriptionItems: ["Intel Core i5 4 núcleos", "8 GB ram DDR3", "128 GB SSD", "13 pulgadas"],
       highlightedText: "¡325,00 USD!",
       alt: "Oferta 2",
@@ -118,8 +177,16 @@ export default function testpage() {
       thumbnail: "/images/Ofertas/Epson_M2170.jpg",
       full: "/images/Ofertas/Epson_M2170.jpg",
       title: "Impresora Epson M2170",
-      description: "Ecotank, Impresora Multifuncional, Impresión monocromática",
-      descriptionItems: ["Multifuncional", "Impresión Monocromática", "Impresora, Copiadora y Escáner", "Conexión WiFi", "Impresión Dúplex", "EcoTank", "Garantía de 1 año"],
+      //description: "Ecotank, Impresora Multifuncional, Impresión monocromática",
+      descriptionItems: [
+        "Multifuncional",
+        "Impresión Monocromática",
+        "Impresora, Copiadora y Escáner",
+        "Conexión WiFi",
+        "Impresión Dúplex",
+        "EcoTank",
+        "Garantía de 1 año",
+      ],
       highlightedText: "390,00 USD",
       alt: "Oferta 3",
     },
@@ -212,12 +279,18 @@ export default function testpage() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
                 >
-                  <ContactIcons
+                  {/* <ContactIcons
                     phone="+593992543979"
                     email="aveintimilla@anvetcorp.com"
                     whatsapp="+593992543979"
                     telegram="+593992543979"
                     location={["ANVETCORP", "Quito", "Ecuador"]}
+                  /> */}
+                  <ContactIconsOnly
+                    contacts={contactData}
+                    iconClassName="customIconClass"
+                    colClassName="customColClass"
+                    containerContactButton="customContainerClass"
                   />
                 </motion.div>
               </section>
@@ -402,7 +475,7 @@ export default function testpage() {
           <section className={styles.qrCode} id="qrCode">
             <Row>
               <Col className={styles.qrCode}>
-                <QRCodeComponent qrCodeImageUrl="/images/qr_code.png" altText="QR Code" />
+                <QRCodeComponent qrCodeImageUrl="/images/QRCode_Aveintimilla.png" altText="QR Code" />
               </Col>
             </Row>
           </section>
